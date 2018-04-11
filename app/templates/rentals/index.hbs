@@ -1,0 +1,14 @@
+<h1>List of house</h1> 
+{{link-to 'New' 'rentals.new'}}
+{{#each model as |rental|}}
+  {{link-to 'Edit' 'rentals.edit' rental.id}}
+  <p>title</p>
+  <span>{{rental.title}}</span>
+  <p>Vista</p>
+  <img src="{{rental.image}}" alt="">
+  <p>Owner</p>
+  <span>{{rental.owner}}</span>
+  <p>Nro of Bedrooms</p>
+  <span>{{rental.bedrooms}}</span>
+  <hr>
+{{/each}}

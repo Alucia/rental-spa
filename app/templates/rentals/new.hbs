@@ -1,0 +1,10 @@
+<h1>New Rentals</h1>
+<form {{action 'create' model on='submit'}}>
+  <p>title</p>
+  {{input type="text" value=model.title}}
+  <p>Owner</p>
+  {{input type="text" value=model.owner}}
+  <p>Nro of Bedrooms</p>
+  {{input type="text" value=model.bedrooms}}
+  <input type="submit">
+</form>
